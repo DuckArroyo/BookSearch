@@ -8,48 +8,33 @@
 
 ## Links
 
-~Github Pages [Link]()~~
+~~[Github Pages]()~~
 
-Github Repository [Link](https://github.com/DuckArroyo/BookSearch)
+[Github Repository](https://github.com/DuckArroyo/BookSearch)
 
-Heroku [Link]()
+[Heroku](https://agile-anchorage-34511.herokuapp.com/)
+
+## GitHub - Heroku
 
 ## Description
 
+Book search application with React (Full Stack).
+
 ## Required installations for code duplication
 
-npm - npm install
-
-.env - npm install dotenv
-
-bcrypt - npm install bcrypt
-
-Connect-session-sequelize - npm i connect-session-sequelize
-
-Express Handlebars - npm install express-handlebars
-
-Express-sessions - npm i express-session
-
-express - npm install express
-
-fs - npm install file-system --save
-
-inquirer - npm install inquirer
-
-Mongoose - npm install mongoose
-
-mysql2 - npm install mysql2
-
-sequelize - npm install sequelize
+- npm - `npm install`
+- nodemon - `npm install -g nodemon`
+- express - `npm install express`
+- Mongoose - `npm install mongoose`
 
 ## The commandments
 
-"scripts": {
-"watch": "nodemon server.js",
-"test": "jest",
-"start": "node server.js",
-"seed": "node seeds/index.js"
-},
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
 
 # Contributions by:
 
