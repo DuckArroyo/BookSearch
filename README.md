@@ -26,15 +26,16 @@ Book search application with React (Full Stack).
 - nodemon - `npm install -g nodemon`
 - express - `npm install express`
 - Mongoose - `npm install mongoose`
+- Apollo Server 2 - `npm install apollo-server-express@2.15.0`
 
 ## The commandments
 
-  "scripts": {
-    "start": "node server/server.js",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
-  },
+"scripts": {
+"start": "node server/server.js",
+"develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+"install": "cd server && npm i && cd ../client && npm i",
+"build": "cd client && npm run build"
+},
 
 # Contributions by:
 
