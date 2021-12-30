@@ -41,19 +41,19 @@ Book search application with React (Full Stack).
 
 DeveloperDuckArroyo
 
-[Portfolio](https://duckarroyo.github.io/challenge2)
+[Email](mailto:DeveloperDuckArroyo@gmail.com)
 
-[React Portfolio](http://DuckArroyo.github.io/challenge20)
+[Portfolio](https://github.com/DuckArroyo/portfolio)
+
+[React Portfolio](http://DuckArroyo.github.io/reactPortfolio)
 
 [GitHub](https://github.com/DuckArroyo)
 
 [Twitter @DevDuckArroyo](https://twitter.com/DevDuckArroyo)
 
-[LinkeIn](https://www.linkedin.com/in/duckarroyo)
+[LinkedIn](https://www.linkedin.com/in/duckarroyo)
 
 [CodePen](https://codepen.io/DeveloperDuckArroyo)
-
-[Email](mailto:DeveloperDuckArroyo@gmail.com)
 
 # Screnshots
 
