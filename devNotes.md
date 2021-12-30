@@ -47,6 +47,8 @@ Create Mutations
 
 ## More Front End
 
+# Instructions
+
 Additionally, you’ll need to complete the following tasks in each of these front-end files:
 
 App.js: Create an Apollo Provider to make every request work with the Apollo server.
