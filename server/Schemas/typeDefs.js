@@ -15,8 +15,8 @@ type User {
   }
 
   type Book {
-    _id: ID
-    bookId: String
+    _id: ID!
+    bookId: String!
     author: [String]
     description: String
     image: String
@@ -40,7 +40,7 @@ type Mutation {
 }
 
 type Auth {
-    token: ID
+    token: ID!
     user: User
 }
 
