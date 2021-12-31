@@ -10,7 +10,7 @@
    - server runs
    - client runs
    - main sripts (concurrently) runs
-4. Clean React app. - pending 12/28
+4. Clean React app. - 
 
 ## GitHub - Heroku
 
