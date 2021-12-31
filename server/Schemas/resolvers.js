@@ -82,7 +82,7 @@ const resolvers = {
       throw new AuthenticationError('You need to login to add a book!');
     },
 
-    removeBook: async (parent, args, context) => {
+    deleteBook: async (parent, args, context) => {
       if (context.user) {
         const book = await Book.findByIdAndUpdate({ ...args, username: context.user.username });
     
