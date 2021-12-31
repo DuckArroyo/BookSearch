@@ -10,7 +10,9 @@ const { signToken } = require('../utils/auth');
 const { AuthenticationError } = require('apollo-server-express');
 
 const resolvers = {
-  //! CODE IT
+  Query: {
+    
+  }
 };
 
 module.exports = resolvers;

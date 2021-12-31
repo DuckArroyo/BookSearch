@@ -31,11 +31,7 @@ type User {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-
-    saveBook([Book]) User
-     
-    Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a User type. (Look into creating what's known as an input type to handle all of these parameters!)
-
+    saveBook(Book!: [author, description, title, bookId, image, link]) User
     removeBook(bookId: ID!): User
 }
 
