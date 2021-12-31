@@ -39,7 +39,7 @@ const startServer = async () => {
 startServer();
 
 // TODO GOOD
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // TODO GOOD
