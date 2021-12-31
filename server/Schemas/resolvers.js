@@ -66,13 +66,29 @@ const resolvers = {
       return { token, user };
     },
 
-    addBook: async (parent, args, context) => {
+   saveBook: async (parent, args, context) => {
       if (context.user) {
         const book = await Book.create({ ...args, username: context.user.username });
     
         await User.findByIdAndUpdate(
           { _id: context.user._id },
           { $push: { books: book._id } },
+          { new: true }
+        );
+    
+        return book;
+      }
+    
+      throw new AuthenticationError('You need to login to add a book!');
+    },
+
+    removeBook: async (parent, args, context) => {
+      if (context.user) {
+        const book = await Book.findByIdAndUpdate({ ...args, username: context.user.username });
+    
+        await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $pull: { books: book._id } },
           { new: true }
         );
     
