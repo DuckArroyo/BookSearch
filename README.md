@@ -40,9 +40,9 @@ Book search application with React (Full Stack).
 
 DeveloperDuckArroyo
 
-[Portfolio](https://duckarroyo.github.io/challenge2)
+[Portfolio](https://duckarroyo.github.io/portfolio/)
 
-[React Portfolio](http://DuckArroyo.github.io/challenge20)
+[React Portfolio](https://peaceful-journey-85026.herokuapp.com/)
 
 [GitHub](https://github.com/DuckArroyo)
 
