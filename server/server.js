@@ -22,8 +22,9 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 //! Create Apollo server
+let server = null;
 const startServer = async () => {
-  const server = new ApolloServer({
+  server = new ApolloServer({
     typeDefs,
     resolvers,
     context: authMiddleware,
@@ -46,12 +47,11 @@ app.use(express.json());
 // if we're in production, serve client/build as static assets
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
+  // TODO GOOD - wild card GET
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build'));
+  });
 }
-
-// TODO GOOD - wild card GET
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build'));
-});
 
 //! Not needed for upgrade
 // app.use(routes);
